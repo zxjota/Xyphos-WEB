@@ -1,1 +1,458 @@
 
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Xyphos</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #1e293b;
+            --accent: #8b5cf6;
+            --text: #334155;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --bg-light: #f8fafc;
+            --bg-card: #ffffff;
+            --radius: 8px;
+            --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .app-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+        
+        .policy-title {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        .effective-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            background: var(--bg-light);
+            border-radius: 20px;
+            margin-top: 0.5rem;
+        }
+        
+        /* Content Card */
+        .content-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: 2.5rem;
+        }
+        
+        h1 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+        }
+        
+        h2 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin: 1.5rem 0 0.75rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin: 1.5rem 0;
+        }
+        
+        .highlight-box strong {
+            color: var(--primary-dark);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 1px solid var(--border);
+        }
+        
+        .contact-title {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        
+        .email-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--primary);
+        }
+        
+        .email-link {
+            color: var(--primary);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .email-link:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+        
+        .copyright {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .content-card {
+                padding: 1.5rem;
+            }
+            
+            .app-name {
+                font-size: 2rem;
+            }
+            
+            .policy-title {
+                font-size: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+            
+            .content-card {
+                box-shadow: none;
+                padding: 0;
+            }
+            
+            .highlight-box {
+                background: #f5f5f5;
+            }
+            
+            .email-link {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        
+        /* Security Badge */
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #dcfce7;
+            color: #166534;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-header">
+                <div class="app-icon">X</div>
+                <h1 class="app-name">Xyphos</h1>
+            </div>
+            <p class="tagline">Advanced Password Generator & Security Tool</p>
+            <h2 class="policy-title">Privacy Policy</h2>
+            <div class="effective-date" id="currentDate">Effective Date: Loading...</div>
+        </header>
+        
+        <main class="content-card">
+            <section class="intro">
+                <p>This Privacy Policy describes how Xyphos ("we", "us", or "our") handles information in our password generation application. By using Xyphos, you agree to the practices described in this policy.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Core Privacy Principle:</strong> Xyphos is designed with privacy as a fundamental feature. The application operates entirely on your device – <strong>no passwords, patterns, or generated data are ever transmitted to external servers</strong> unless you explicitly use optional sharing features.</p>
+                </div>
+                
+                <div class="security-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                    </svg>
+                    <span>Local Processing & Zero Data Collection</span>
+                </div>
+            </section>
+            
+            <section>
+                <h1>1. Information Handling</h1>
+                
+                <h2>1.1 What We Do NOT Collect</h2>
+                <p>Xyphos is designed to protect your privacy by default:</p>
+                <ul>
+                    <li><strong>No password storage:</strong> We do not store or have access to passwords you generate</li>
+                    <li><strong>No usage tracking:</strong> We do not track your password generation patterns or history</li>
+                    <li><strong>No personal data:</strong> We do not require or collect personal identifiers</li>
+                    <li><strong>No network transmission:</strong> All operations occur locally on your device</li>
+                </ul>
+                
+                <h2>1.2 Local Device Data</h2>
+                <p>The application may store the following data locally on your device:</p>
+                <ul>
+                    <li><strong>App preferences:</strong> Your selected settings for password generation</li>
+                    <li><strong>Temporary clipboard data:</strong> When you copy passwords (handled by your device's clipboard system)</li>
+                    <li><strong>Cache data:</strong> Temporary files for app performance</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h1>2. How Information is Used</h1>
+                <p>Any data stored locally on your device is used exclusively for:</p>
+                <ul>
+                    <li>Remembering your preferred password generation settings</li>
+                    <li>Maintaining app functionality and user interface preferences</li>
+                    <li>Providing consistent performance across app sessions</li>
+                </ul>
+                
+                <h2>2.1 Algorithm Operation</h2>
+                <p>Xyphos uses deterministic algorithms to generate passwords based on:</p>
+                <ul>
+                    <li>Your selected parameters (length, character types, etc.)</li>
+                    <li>Cryptographically secure random number generation</li>
+                    <li>Mathematical algorithms that execute entirely on your device</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h1>3. Data Security & Storage</h1>
+                
+                <h2>3.1 Local Storage Architecture</h2>
+                <p>All app data is stored exclusively in your device's local storage using platform-specific secure storage mechanisms. This data is:</p>
+                <ul>
+                    <li>Encrypted by your device's operating system (iOS Keychain, Android Keystore, etc.)</li>
+                    <li>Accessible only to the Xyphos application</li>
+                    <li>Automatically deleted if you uninstall the app (depending on OS behavior)</li>
+                </ul>
+                
+                <h2>3.2 Clipboard Security</h2>
+                <p>When you copy generated passwords to your device's clipboard:</p>
+                <ul>
+                    <li>This action is managed by your operating system's clipboard service</li>
+                    <li>Xyphos has no control over clipboard data after it leaves the app</li>
+                    <li>We recommend clearing your clipboard after pasting sensitive data</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h1>4. Third-Party Services</h1>
+                <p>Xyphos uses minimal third-party services:</p>
+                <ul>
+                    <li><strong>App Store Analytics:</strong> Basic download statistics (provided by Apple App Store / Google Play Store)</li>
+                    <li><strong>Crash Reporting:</strong> Anonymous crash data to improve app stability (optional, can be disabled in device settings)</li>
+                </ul>
+                <p>These services operate under their respective privacy policies and do not receive password data or generation patterns.</p>
+            </section>
+            
+            <section>
+                <h1>5. Your Control & Rights</h1>
+                <p>You maintain complete control over your data:</p>
+                <ul>
+                    <li><strong>Clear Data:</strong> Uninstalling the app removes all locally stored data</li>
+                    <li><strong>Adjust Settings:</strong> Modify generation parameters at any time</li>
+                    <li><strong>No Accounts:</strong> No registration required, no data linkage to personal identity</li>
+                    <li><strong>Export:</strong> Generate new passwords as needed without data retention</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h1>6. Children's Privacy</h1>
+                <p>Xyphos does not knowingly collect or process data from children under 13. The app is designed for general audiences and does not require age verification due to its non-collection of personal data.</p>
+            </section>
+            
+            <section>
+                <h1>7. Policy Changes</h1>
+                <p>We may update this Privacy Policy periodically. Continued use of Xyphos after changes constitutes acceptance of the updated policy. Significant changes will be noted in app update descriptions.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="contact-title">Contact Information</h2>
+                <p>For questions about this Privacy Policy or Xyphos's privacy practices:</p>
+                <div class="contact-info">
+                    <svg class="email-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <a href="mailto:np5065@gmail.com" class="email-link">np5065@gmail.com</a>
+                </div>
+                <p style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-light);">Please include "Xyphos Privacy Inquiry" in the subject line.</p>
+            </section>
+        </main>
+        
+        <footer>
+            <p class="copyright">&copy; <span id="currentYear">2023</span> Xyphos. All rights reserved.</p>
+            <p>This Privacy Policy is written in American English and applies to all Xyphos applications and services.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Set current date and year
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = now.toLocaleDateString('en-US', options);
+            
+            // Update effective date
+            const dateElement = document.getElementById('currentDate');
+            if (dateElement) {
+                dateElement.textContent = `Effective Date: ${formattedDate}`;
+            }
+            
+            // Update copyright year
+            const yearElement = document.getElementById('currentYear');
+            if (yearElement) {
+                yearElement.textContent = now.getFullYear();
+            }
+            
+            // Add smooth scrolling for print
+            if (window.location.hash) {
+                setTimeout(() => {
+                    const id = window.location.hash.substring(1);
+                    const element = document.getElementById(id);
+                    if (element) element.scrollIntoView();
+                }, 100);
+            }
+        });
+        
+        // Print-friendly behavior
+        window.addEventListener('beforeprint', () => {
+            document.body.classList.add('printing');
+        });
+        
+        window.addEventListener('afterprint', () => {
+            document.body.classList.remove('printing');
+        });
+    </script>
+</body>
+</html>
